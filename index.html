@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Plushie Catcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1>Happy Plushie Catcher</h1>
+      <p>Insert a coin, move the claw, and catch a cute stuffed friend!</p>
+    </header>
+
+    <main class="machine-wrap">
+      <section class="machine">
+        <div class="machine-top">
+          <div class="claw-track">
+            <div class="claw" id="claw">
+              <div class="claw-arm"></div>
+              <div class="claw-grip left"></div>
+              <div class="claw-grip right"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-glass" id="machineGlass">
+          <div class="plush-bin" id="plushBin"></div>
+        </div>
+
+        <div class="machine-bottom">
+          <div class="prize-slot" id="prizeSlot">Prize Slot</div>
+          <div class="coins-display">Coins: <span id="coinCount">0</span></div>
+        </div>
+      </section>
+
+      <aside class="controls">
+        <h2>Control Panel</h2>
+        <button id="coinBtn">Insert Coin</button>
+        <button id="leftBtn">Move Left</button>
+        <button id="rightBtn">Move Right</button>
+        <button id="grabBtn">Grab Plushie</button>
+        <p id="message">Welcome! Add a coin to start.</p>
+        <div class="collection">
+          <h3>Your Plushies</h3>
+          <div id="caughtList" class="caught-list"></div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
